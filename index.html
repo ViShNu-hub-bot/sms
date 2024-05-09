@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Send Bulk SMS</title>
-    <link rel="icon" type="image/x-icon" href="/style/favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="A simple interface to send bulk sms messages using the ALS API.">
     <meta content="ALS, ALS API, Bulk SMS, Bulk Text, Send SMS, Send Text, Alphanumeric, SMS, Test Message" name="keywords">
     <meta name="robots" content="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <div id="app" data-v-app="">
     <main>
         <div class="hero__container bg--black hero__container--page">
             <div class="hero__image hero__image--overlay">
                 <picture>
-                    <img src="style/sms-header.webp" alt="" />
+                    <img src="sms-header.webp" alt="" />
                 </picture>
             </div>
             <div class="hero__content hero__content--left">
@@ -32,7 +32,7 @@
                 <div class="content-block__wrapper">
                     <div class="content-block__image">
                         <picture>
-                            <img src="style/social-messages.svg" alt="" />
+                            <img src="social-messages.svg" alt="" />
                         </picture>
                     </div>
                     <div class="content-block__text">
@@ -166,20 +166,20 @@
                                         <div>
                                             <div id="invalidNumbers" class="hide-element">
                                                 <div id="sendErrorsText" class="error_download_delete"></div>
-                                                <img class="download_errors" onClick="downloadErrorNumbers('invalid_numbers')" src="style/download.svg" alt="" />
-                                                <img class="trash_errors" onClick="deleteErrorNumbers('invalidNumbers')" src="style/trash.svg" alt="" />
+                                                <img class="download_errors" onClick="downloadErrorNumbers('invalid_numbers')" src="download.svg" alt="" />
+                                                <img class="trash_errors" onClick="deleteErrorNumbers('invalidNumbers')" src="trash.svg" alt="" />
                                                 <a id="invalid_numbers" class="download_icon hidden-element" href="#" download></a>
                                             </div>
                                             <div id="missingCountryCodeErrors" class="hide-element">
                                                 <div id="missingCountryCodeText" class="error_download_delete"></div>
-                                                <img class="download_errors" onClick="downloadErrorNumbers('missing_country_codes')" src="style/download.svg" alt="" />
-                                                <img class="trash_errors" onClick="deleteMissingCountryCode('missingCountryCodeErrors')" src="style/trash.svg" alt="" />
+                                                <img class="download_errors" onClick="downloadErrorNumbers('missing_country_codes')" src="download.svg" alt="" />
+                                                <img class="trash_errors" onClick="deleteMissingCountryCode('missingCountryCodeErrors')" src="trash.svg" alt="" />
                                                 <a id="missing_country_codes" class="download_icon hidden-element" href="#" download></a>
                                             </div>
                                             <div id="duplicateNumbers" class="hide-element">
                                                 <div id="duplicateNumbersText" class="error_download_delete"></div>
-                                                <img class="download_errors" onClick="downloadErrorNumbers('duplicate_numbers')" src="style/download.svg" alt="" />
-                                                <img class="trash_errors" onClick="deleteErrorNumbers('duplicateNumbers')" src="style/trash.svg" alt="" />
+                                                <img class="download_errors" onClick="downloadErrorNumbers('duplicate_numbers')" src="download.svg" alt="" />
+                                                <img class="trash_errors" onClick="deleteErrorNumbers('duplicateNumbers')" src="trash.svg" alt="" />
                                                 <a id="duplicate_numbers" class="download_icon " href="#" download></a>
                                             </div>
                                         </div>
@@ -281,16 +281,16 @@
                                     <p id="confirmationSendingStatus"></p>
                                     <div id="numberSendStatusContainer" class="hide-element">
                                         <div id="numberSendStatus" class="error_download_delete">Download the sent status report</div>
-                                        <img class="download_errors" onClick="downloadErrorNumbers('sms_sent_status_summary')" src="style/download.svg" alt="" />
+                                        <img class="download_errors" onClick="downloadErrorNumbers('sms_sent_status_summary')" src="download.svg" alt="" />
                                         <a id="sms_sent_status_summary" class="download_icon " href="#" download></a>
                                     </div>
                                 </div>
                             </div>
                                 <div class="content-block__image">
                                     <picture>
-                                        <img id="confirmationSendingIcon" class="image-confirmation hide-element" src="style/hardware-other.svg" alt="" />
-                                        <img id="confirmationFatalIcon" class="image-confirmation hide-element" src="style/fatal-error.svg" alt="" />
-                                        <img id="confirmationSentIcon" class="image-confirmation" src="style/email-existing.svg" alt="" />
+                                        <img id="confirmationSendingIcon" class="image-confirmation hide-element" src="hardware-other.svg" alt="" />
+                                        <img id="confirmationFatalIcon" class="image-confirmation hide-element" src="fatal-error.svg" alt="" />
+                                        <img id="confirmationSentIcon" class="image-confirmation" src="email-existing.svg" alt="" />
                                     </picture>
                             </div>
                         </div>
